@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Header from '@/components/Layout/Header';
+import Header from '../components/Layout/Header';
+import Footer from '../components/Layout/Footer';
 
 const Home: NextPage = () => {
   return (
@@ -11,9 +12,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main>
-        <h1>Welcome to Weight Loss Coach</h1>
+      <main className="container mx-auto p-4">
+        <h1 className="text-4xl font-bold text-center my-8">Welcome to Weight Loss Coach</h1>
       </main>
+      <Footer />
     </div>
   );
 };
