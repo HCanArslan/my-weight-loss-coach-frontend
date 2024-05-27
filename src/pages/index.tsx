@@ -1,23 +1,30 @@
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import Header from '../components/Layout/Header';
-import Footer from '../components/Layout/Footer';
+import React from 'react'
+import Header from '@/components/Layout/Header'
+import HeroSection from '@/components/common/HeroSection'
+import FeaturesSection from '@/components/common/FeaturesSection'
+import HowItWorksSection from '@/components/common/HowItWorksSection'
+import TestimonialsSection from '@/components/common/TestimonialsSection'
+import PricingSection from '@/components/common/PricingSection'
+import AboutUsSection from '@/components/common/AboutUsSection'
+import CallToActionSection from '@/components/common/CallToActionSection'
+import Footer from '@/components/Layout/Footer'
 
-const Home: NextPage = () => {
+const HomePage = () => {
   return (
-    <div>
-      <Head>
-        <title>Weight Loss Coach</title>
-        <meta name="description" content="Personalized weight loss coaching" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="container mx-auto p-4">
-        <h1 className="text-4xl font-bold text-center my-8">Welcome to Weight Loss Coach</h1>
+      <main className="flex-grow">
+        <HeroSection />
+        <FeaturesSection />
+        <HowItWorksSection />
+        <TestimonialsSection />
+        <PricingSection />
+        <AboutUsSection />
+        <CallToActionSection />
       </main>
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default HomePage
