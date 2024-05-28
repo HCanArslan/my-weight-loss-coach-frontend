@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="bg-white shadow">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 className="text-lg font-bold">YourBrandLogo</h1>
+        <h1 className="text-lg font-bold">weightcoachai</h1>
         <nav className="space-x-4">
           <Link href="/about" className="text-gray-600 hover:text-gray-900">
             About
@@ -24,7 +24,9 @@ const Header = () => {
           </Link>
         </nav>
         <div className="space-x-4">
-          <button className="py-2 px-4 bg-blue-600 text-white font-bold rounded-md hover:bg-blue-700">Get Started</button>
+          <a href="#">
+            <button className="py-2 px-4 bg-blue-600 text-white font-bold rounded-md hover:bg-blue-700">Get Started</button>
+          </a>
         </div>
       </div>
     </header>

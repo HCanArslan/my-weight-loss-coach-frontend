@@ -31,3 +31,103 @@ body {
     text-wrap: balance;
   }
 }
+
+/* global.css */
+:root {
+  --sk-body-text-color: rgb(29, 29, 31);
+  --sk-headline-text-color: rgb(29, 29, 31);
+  --sk-body-background-color: rgb(255, 255, 255);
+  --sk-body-font-stack: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --sk-cta-blue: rgb(37, 99, 235);
+  --sk-cta-blue-hover: rgb(29, 78, 216);
+  --sk-secondary-color: rgb(245, 105, 0);
+}
+
+html {
+  font-family: var(--sk-body-font-stack);
+  font-size: 106.25%;
+  quotes: "“" "”";
+}
+
+body {
+  font-size: 17px;
+  line-height: 1.47;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: var(--sk-body-font-stack);
+  background-color: var(--sk-body-background-color);
+  color: var(--sk-body-text-color);
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--sk-headline-text-color);
+}
+
+h1, h2, h3, h4, h5, h6 + * {
+  margin-top: var(--headline-to-body);
+}
+
+p + *, ol + *, ul + * {
+  margin-top: var(--headline-to-body);
+}
+
+ol, ul {
+  margin-inline-start: 1.176em;
+}
+
+b, strong {
+  font-weight: 600;
+}
+
+a {
+  color: var(--sk-link-color);
+  letter-spacing: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button, input, select, textarea {
+  font-synthesis: none;
+  -moz-font-feature-settings: "kern";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  background: var(--sk-cta-blue);
+  color: white;
+  border: 0;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  font-weight: 600;
+  font-size: 1em;
+  border-radius: 0.25em;
+}
+
+button:hover {
+  background: var(--sk-cta-blue-hover);
+}
+
+button:disabled {
+  cursor: default;
+  background: var(--sk-cta-blue);
+  opacity: 0.5;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--sk-cta-blue-hover);
+  outline-offset: 1px;
+}
+
+/* Section Spacing */
+.section {
+  padding-top: var(--headline-to-body);
+  padding-bottom: var(--headline-to-body);
+}
+
+
+
