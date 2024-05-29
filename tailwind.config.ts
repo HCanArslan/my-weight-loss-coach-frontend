@@ -21,6 +21,8 @@ const config: Config = {
         ctaBlue: 'rgb(37, 99, 235)',
         ctaBlueHover: 'rgb(29, 78, 216)',
         secondary: 'rgb(245, 105, 0)',
+        third: '#F9E9D9',
+        faqHover: '#f0f0f0', // Custom hover color for FAQ buttons
       },
       fontFamily: {
         body: ['"SF Pro Text"', '"SF Pro Icons"', '"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
@@ -33,7 +35,7 @@ const config: Config = {
       },
       fontSize: {
         base: '17px',
-        h1: '5rem',
+        h1: '80px',
         h2: '4rem',
         h3: '3rem',
         h4: '2.5rem',
@@ -42,6 +44,7 @@ const config: Config = {
       },
       lineHeight: {
         base: '1.47',
+        h1: '84px'
       },
       letterSpacing: {
         base: '-0.022em',

@@ -5,7 +5,7 @@ const FeaturesSection = () => {
     <section className="bg-bodyBackground py-section">
       <div className="container mx-auto px-4">
         <h2 className="text-6xl font-bold text-headlineText mb-8 text-center">Our Features</h2>
-        <p className="text-xl text-bodyText mb-16 text-center">
+        <p className="text-xl text-bodyText mb-16 text-center space-b-features">
           Experience the perfect blend of AI technology and personalized expert guidance to achieve your health goals.
         </p>
 
@@ -17,13 +17,13 @@ const FeaturesSection = () => {
                 Monitor your weight loss journey with our comprehensive tracking tools. Our detailed reports and insights provide you with everything you need to stay on track and achieve your weight loss goals. Whether you are just starting out or are already on your journey, our tools will help you make informed decisions every step of the way.
               </p>
             </div>
-            <div className="lg:w-1/2 flex justify-center lg:justify-end items-center">
+            <div className="lg:w-1/2 flex justify-center lg:justify-end items-center md:py-bodyToImage">
               <img src="/A_person_using_a_mobile_app_for_quick_calorie_trac.png" alt="Weight Loss Tracking" className="rounded-lg shadow-lg w-2/3 lg:w-3/4" />
             </div>
           </div>
 
           <div className="flex flex-col lg:flex-row items-center lg:items-center">
-            <div className="lg:w-1/2 flex justify-center lg:justify-start items-center order-last lg:order-none">
+            <div className="lg:w-1/2 flex justify-center lg:justify-start items-center order-last lg:order-none md:py-bodyToImage">
               <img src="/A_person_using_a_mobile_app_for_meal_planning.png" alt="AI-Generated Personalized Nutrition Plans" className="rounded-lg shadow-lg w-2/3 lg:w-3/4" />
             </div>
             <div className="lg:w-1/2 px-4 flex flex-col justify-center">
@@ -41,8 +41,20 @@ const FeaturesSection = () => {
                 Gain valuable insights into your performance with detailed analytics. Track your progress over time and make informed decisions based on comprehensive data. Our performance analytics tools help you understand what works best for you, allowing you to make adjustments to your plans and stay motivated throughout your journey.
               </p>
             </div>
-            <div className="lg:w-1/2 flex justify-center lg:justify-end items-center">
+            <div className="lg:w-1/2 flex justify-center lg:justify-end items-center md:py-bodyToImage">
               <img src="/A_person_using_a_mobile_app_for_progress_tracking.png" alt="Performance Analytics and Insights" className="rounded-lg shadow-lg w-2/3 lg:w-3/4" />
+            </div>
+          </div>
+
+          <div className="flex flex-col lg:flex-row items-center lg:items-center">
+            <div className="lg:w-1/2 flex justify-center lg:justify-start items-center order-last lg:order-none md:py-bodyToImage">
+              <img src="/Expert_coaching.png" alt="Expert Coaching" className=" w-2/3 lg:w-3/4" />
+            </div>
+            <div className="lg:w-1/2 px-4 flex flex-col justify-center">
+              <h3 className="text-4xl font-bold text-headlineText mb-2">Expert Coaching with AI Assistance</h3>
+              <p className="text-bodyText">
+                Our expert coaches work alongside our advanced AI technology to provide you with personalized coaching. The AI analyzes your data and progress, offering insights and recommendations that our expert coaches use to tailor their guidance specifically to you. This ensures that you receive the best of both worlds: the precision of AI and the human touch of professional coaching.
+              </p>
             </div>
           </div>
         </div>
